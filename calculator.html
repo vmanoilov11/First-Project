@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="calculator.js"></script>
+    </head>
+
+    <body>
+        <table id = "calculator">
+            <tr>
+                <td colspan = '3'>
+                    <input type="text" id = "result">
+                </td>
+                <td>
+                    <input type="button" id="delete" value="AC" onclick="clearResult()" >
+                </td> 
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" id="button7" value="7" onclick="clickCalculator('7')">
+                </td>
+                <td>
+                    <input type="button" id="button8" value="8" onclick="clickCalculator('8')">
+                </td>
+                <td>
+                    <input type="button" id="button9" value="9" onclick="clickCalculator('9')">
+                </td>
+                <td>
+                    <input type="button" id="devide" value="/" onclick="clickCalculator('/')">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="button" id="button4" value="4" onclick="clickCalculator('4')">
+                </td>
+                <td>
+                    <input type="button" id="button5" value="5" onclick="clickCalculator('5')">
+                </td>
+                <td>
+                    <input type="button" id="button6" value="6" onclick="clickCalculator('6')">
+                </td>
+                <td>
+                    <input type="button" id="multiplication" value="*" onclick="clickCalculator('*')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="button1" value="1" onclick="clickCalculator('1')">
+                </td>
+                <td>
+                    <input type="button" id="button2" value="2" onclick="clickCalculator('2')">
+                </td>
+                <td>
+                    <input type="button"  id="button3" value="3" onclick="clickCalculator('3')" >
+                </td>
+                <td> 
+                    <input type="button" id="plus" value="+" onclick="clickCalculator('+')">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="button" id="button0" value="0" onclick="clickCalculator('0')">
+                </td>
+                <td>
+                    <input type="button" id="point" value="." onclick="clickCalculator('.')">
+                </td>
+                <td>
+                    <input type="button" id="modulus" value="%" onclick="clickCalculator('%')">
+                </td>
+                <td>
+                    <input type="button" id="minus" value="-" onclick="clickCalculator('-')">
+                </td>
+            </tr>
+            <tr>
+                <td  colspan="3">
+                    <input type="button" id="sum" value="=" onclick="sum()">
+                </td>
+            </tr>
+        </table>
+    </body>
+
+</html>
