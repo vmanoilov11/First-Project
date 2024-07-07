@@ -1,4 +1,5 @@
 function clearResult(){
+    
     document.getElementById("result").value = "";
 }
 function clickCalculator(value){
